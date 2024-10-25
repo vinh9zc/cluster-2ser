@@ -1,44 +1,32 @@
 <!DOCTYPE html>
-<html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Markmap</title>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
-#mindmap {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-}
-</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css">
+<meta charset="utf-8"/>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<link rel="stylesheet" href="base.min.css"/>
+<link rel="stylesheet" href="fancy.min.css"/>
+<link rel="stylesheet" href="main.css"/>
+<script src="compatibility.min.js"></script>
+<script src="theViewer.min.js"></script>
+<script>
+try{
+theViewer.defaultViewer = new theViewer.Viewer({});
+}catch(e){}
+</script>
+<title></title>
 </head>
 <body>
-<svg id="mindmap"></svg>
-<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/index.js"></script><script>(r => {
-                setTimeout(r);
-              })(() => {
-  const {
-    markmap,
-    mm
-  } = window;
-  const {
-    el
-  } = markmap.Toolbar.create(mm);
-  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
-  document.body.append(el);
-})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
-              const markmap = getMarkmap();
-              window.mm = markmap.Markmap.create(
-                "svg#mindmap",
-                (getOptions || markmap.deriveOptions)(jsonOptions),
-                root2
-              );
-            })(() => window.markmap,null,{"content":"HA2SER","children":[{"content":"🖥️ Máy chủ IIS","children":[{"content":"📌1.1.Cấu hình","children":[{"content":"[vCPU:32GB]","children":[],"payload":{"lines":"2,3"}},{"content":"[RAM:32GB]","children":[],"payload":{"lines":"3,4"}},{"content":"[SSD:200GB]","children":[],"payload":{"lines":"4,5"}}],"payload":{"lines":"1,2"}},{"content":"📌1.2.Giấy phép","children":[{"content":"[License Windows Server 2022 Standard]","children":[],"payload":{"lines":"6,7"}}],"payload":{"lines":"5,6"}},{"content":"📌1.3.Khác","children":[{"content":"🌐","children":[{"content":"[Hard drive (IOPS): 1.000 IOPS]","children":[],"payload":{"lines":"9,10"}},{"content":"[Băng thông internet (internet bandwidth): 200-300 MB]","children":[],"payload":{"lines":"10,11"}},{"content":"[Địa chỉ ip public: 01]","children":[],"payload":{"lines":"11,12"}},{"content":"[Tên miền  : 01]","children":[],"payload":{"lines":"12,13"}},{"content":"[Tường lửa (firewall): 01(gói)]","children":[],"payload":{"lines":"13,16"}}],"payload":{"lines":"8,16"}}],"payload":{"lines":"7,8"}}],"payload":{"lines":"0,1"}},{"content":"🖥️ Máy chủ SQL","children":[{"content":"📌2.1.Cấu hình","children":[{"content":"[vCPU:64GB]","children":[],"payload":{"lines":"18,19"}},{"content":"[RAM:64GB]","children":[],"payload":{"lines":"19,20"}},{"content":"[SSD:300GB]","children":[],"payload":{"lines":"20,21"}}],"payload":{"lines":"17,18"}},{"content":"📌 2.2.Giấy phép","children":[{"content":"[License MS SQL 2022 Standard ]","children":[],"payload":{"lines":"22,23"}}],"payload":{"lines":"21,22"}},{"content":"📌 2.3.Khác","children":[{"content":"🌐","children":[{"content":"[Hard drive (IOPS): 1.000 IOPS]","children":[],"payload":{"lines":"25,26"}},{"content":"[Băng thông internet (internet bandwidth): 200-300 MB]","children":[],"payload":{"lines":"26,27"}},{"content":"[Địa chỉ ip private: 01]","children":[],"payload":{"lines":"27,28"}},{"content":"[Tên miền  : 00]","children":[],"payload":{"lines":"28,29"}},{"content":"[Tường lửa (firewall): 01(gói)]","children":[],"payload":{"lines":"29,38"}}],"payload":{"lines":"24,38"}}],"payload":{"lines":"23,24"}}],"payload":{"lines":"16,17"}}]},{"color":["#2980b9"]})</script>
+<div id="sidebar">
+<div id="outline">
+</div>
+</div>
+<div id="page-container">
+<div id="pf1" class="pf w0 h0" data-page-no="1"><div class="pc pc1 w0 h0"><img class="bi x0 y0 w1 h1" alt="" src="bg1.png"/><div class="t m0 x1 h2 y1 ff1 fs0 fc0 sc0 ls0 ws0">Public</div><div class="t m0 x2 h3 y2 ff2 fs1 fc0 sc0 ls0 ws0">HA2SERVER</div><div class="t m0 x3 h4 y3 ff1 fs2 fc0 sc0 ls0 ws0">IIS</div><div class="t m0 x4 h5 y4 ff3 fs0 fc1 sc0 ls0 ws0">1. Cấu hình</div><div class="t m0 x5 h5 y5 ff3 fs0 fc2 sc0 ls0 ws0">[vCPU:32GB]</div><div class="t m0 x5 h5 y6 ff3 fs0 fc2 sc0 ls0 ws0">[RAM:32GB]</div><div class="t m0 x5 h5 y7 ff3 fs0 fc2 sc0 ls0 ws0">[SSD:200GB]</div><div class="t m0 x4 h5 y8 ff3 fs0 fc1 sc0 ls0 ws0">2. Giấy phép</div><div class="t m0 x6 h5 y9 ff3 fs0 fc2 sc0 ls0 ws0">[License Windo<span class="_ _0"></span>ws Server 2022 Standard]</div><div class="t m0 x4 h5 ya ff3 fs0 fc1 sc0 ls0 ws0">3. Khác</div><div class="t m0 x7 h5 yb ff3 fs0 fc2 sc0 ls0 ws0">IOPS: 1.000 IOPS</div><div class="t m0 x7 h5 yc ff3 fs0 fc2 sc0 ls0 ws0">Internet bandwidth: 200-300 MB</div><div class="t m0 x7 h5 yd ff3 fs0 fc2 sc0 ls0 ws0">Ip public: 01</div><div class="t m0 x7 h5 ye ff3 fs0 fc2 sc0 ls0 ws0">Domain  : 01</div><div class="t m0 x7 h5 yf ff3 fs0 fc3 sc0 ls0 ws0">Firew<span class="_ _0"></span>all: 01</div><div class="t m0 x8 h4 y10 ff1 fs2 fc0 sc0 ls0 ws0">SQL</div><div class="t m0 x9 h5 y11 ff3 fs0 fc4 sc0 ls0 ws0">1. Cấu hình</div><div class="t m0 xa h5 y12 ff3 fs0 fc4 sc0 ls0 ws0">[vCPU:64GB]</div><div class="t m0 xa h5 y13 ff3 fs0 fc4 sc0 ls0 ws0">[RAM:64GB]</div><div class="t m0 xa h5 y14 ff3 fs0 fc4 sc0 ls0 ws0">[SSD:300GB]</div><div class="t m0 x9 h5 y15 ff3 fs0 fc4 sc0 ls0 ws0">2. Giấy phép</div><div class="t m0 xb h5 y16 ff3 fs0 fc4 sc0 ls0 ws0">[License MS SQL 2022 Standard ]</div><div class="t m0 x9 h5 y17 ff3 fs0 fc4 sc0 ls0 ws0">3. Khác</div><div class="t m0 xc h5 y18 ff3 fs0 fc4 sc0 ls0 ws0">IOPS: 1.000 IOPS</div><div class="t m0 xc h5 y19 ff3 fs0 fc4 sc0 ls0 ws0">Internet bandwidth: 200-300 MB</div><div class="t m0 xc h5 y1a ff3 fs0 fc4 sc0 ls0 ws0">Ip public: 01</div><div class="t m0 xc h5 y1b ff3 fs0 fc4 sc0 ls0 ws0">Domain  : 01</div><div class="t m0 xd h4 y1c ff1 fs2 fc2 sc0 ls0 ws0">SF/W<span class="_ _1"></span>AF</div><div class="t m0 xe h5 y1d ff3 fs0 fc3 sc0 ls0 ws0"> Software Fire<span class="_ _0"></span>wall</div><div class="t m0 xe h5 y1e ff3 fs0 fc3 sc0 ls0 ws0">W<span class="_ _1"></span>AF (W<span class="_ _0"></span>eb Application Fire<span class="_ _0"></span>wall)</div><div class="t m0 xf h6 y1f ff1 fs3 fc2 sc0 ls0 ws0">Connect</div></div><div class="pi" data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'></div></div>
+</div>
+<div class="loading-indicator">
+
+</div>
 </body>
 </html>
